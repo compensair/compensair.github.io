@@ -29,7 +29,7 @@ function getPageParams(sUrl) {
 function getCompensairApiUrl(entity, action) {
     var actionSlash = action !== '' ? action + '/' : '';
     var paramsSlash = getPageParams(window.location.search) !== "" ? '?' + getPageParams(window.location.search) : '';
-    return window.location.protocol + "//" + window.location.host + '/api/v1/' + entity + '/' + actionSlash + paramsSlash;
+    return window.location.protocol + "//" + 'www.compensair.com/api/v1/' + entity + '/' + actionSlash + paramsSlash;
 }
 
 /******************
