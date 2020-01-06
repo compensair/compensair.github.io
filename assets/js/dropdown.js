@@ -297,7 +297,7 @@ var dropdownQuery = function (keyword, dropdown, entity, searchBy) {
         } else {
             var entityWord = entity + 's';
         }
-        resultsPromise = $.get('https://www.compensair.com/api/v1/'+entityWord+'/', restParams);
+        resultsPromise = $.get('https://cors-anywhere.herokuapp.com/https://www.compensair.com/api/v1/'+entityWord+'/', restParams);
         // Store the promise in order to be able to reject it after further keyUp.
         promisesRegistry['dropdownQuery'] = (promisesRegistry['dropdownQuery'] || {});
         promisesRegistry['dropdownQuery'][dropdown.attr('id')] = resultsPromise;
