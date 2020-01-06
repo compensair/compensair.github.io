@@ -1741,7 +1741,7 @@ $(document).ready(function () {
                 callApi(getCompensairApiUrl('all', 'save'), obj.save).always(function(response) {
                         saveReturnedOpportunityDataToStorage(response);
                         var urlHashPart = /#(.*)/.exec(window.location.href) !== null ? /#(.*)/.exec(window.location.href)[0] : '';
-                        window.location.href = 'app.html' + urlHashPart;
+                        window.location.href = 'https://www.compensair.com/app.html' + urlHashPart;
                     }
                 );
                 analyticsEvent('left contacts', {
