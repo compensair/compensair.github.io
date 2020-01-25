@@ -883,20 +883,20 @@ $(document).ready(function () {
             if (hash != null) {
                 selectRadio($('#radio-' + retrieveParam(hash[1], 'typeOfDisruption')));
 
-                setValue('airline', selectRow, 'airline', retrieveParam(hash[1], 'airline'));
-                setValue('departure', selectRow, 'airport', retrieveParam(hash[1], 'departure'));
-                setValue('arrival', selectRow, 'airport', retrieveParam(hash[1], 'arrival'));
+                setValue('airline', selectRow, 'airline', 'Air France (AF)');
+                setValue('departure', selectRow, 'airport', 'LHR');
+                setValue('arrival', selectRow, 'airport', 'LIS');
                 setValue('marrival', selectRow, 'airport', retrieveParam(hash[1], 'marrival'));
                 setValue('country', selectRow, 'country', retrieveParam(hash[1], 'country'));
 
                 if ($('.cform-date').attr('type') === 'date') {
-                    $('.cform-date').val(retrieveParam(hash[1], 'date'));
+                    $('.cform-date').val(new Date().toISOString().slice(0, 10));
                 } else {
-                    $('.cform-date').val(formatDate(retrieveParam(hash[1], 'date')));
+                    $('.cform-date').val(new Date().toISOString().slice(0, 10));
                 }
 
                 if ($(retrieveParam(hash[1], 'delay')).selector < 120){
-                    delayMin = 110;
+                    delayMin = 140;
                 }
                 if ($(retrieveParam(hash[1], 'delay')).selector > 119 && $(retrieveParam(hash[1], 'delay')).selector < 180){
                     delayMin = 150;
