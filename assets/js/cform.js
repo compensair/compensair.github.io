@@ -881,7 +881,7 @@ $(document).ready(function () {
             var hash = urlRegex.exec(url);
             var delayMin;
             if (hash != null) {
-                selectRadio($('#radio-' + retrieveParam(hash[1], 'typeOfDisruption')));
+                selectRadio($('#radio-' + 'radio-delay'));
 
                 setValue('airline', selectRow, 'airline', 'AF');
                 setValue('departure', selectRow, 'airport', 'LHR');
