@@ -667,8 +667,9 @@ $(document).ready(function () {
     $('.cform-arrival').val('');
     $('.cform-mdeparture').val('');
     $('.cform-marrival').val('');
-    $('.cform-airline').val('');
+    $('.cform-airline').val('Air France (AF)');
     $('.cform-country').val('');
+    $('.cform-date').val(new Date().toISOString().slice(0, 10))
 
     $(".envisioned .action-next").keydown(function (e) {
         if ($(this).parent().parent().hasClass('envisioned')) {
