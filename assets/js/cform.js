@@ -883,7 +883,7 @@ $(document).ready(function () {
             if (hash != null) {
                 selectRadio($('#radio-' + retrieveParam(hash[1], 'typeOfDisruption')));
 
-                setValue('airline', selectRow, 'airline', 'Air France (AF)');
+                setValue('airline', selectRow, 'airline', 'AF');
                 setValue('departure', selectRow, 'airport', 'LHR');
                 setValue('arrival', selectRow, 'airport', 'LIS');
                 setValue('marrival', selectRow, 'airport', retrieveParam(hash[1], 'marrival'));
