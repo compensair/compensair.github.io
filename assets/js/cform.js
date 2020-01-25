@@ -908,6 +908,10 @@ $(document).ready(function () {
                     delayMin = 250;
                 }
                 selectRadio($('#radio-' + delayMin));
+             
+             $('.from-to-basic').hide();
+             $('.date-airline').hide();
+             $('.flightType').hide();
 
                 selectRadio($('#radio-' + retrieveParam(hash[1], 'warnedBefore')));
                 $('.cform-name').val(retrieveParam(hash[1], 'name'));
