@@ -363,6 +363,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	</section>
 
 	<section class="congrats cform-sub provisioned">
+		<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/xlednozn" method="post">
 		<div class="focus-button"></div>
 
 		<div class="congrats-block">
@@ -373,14 +374,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<p class="howitworks-user-note congrats-note">Мы берём комиссию <span class="congrats-note--commission">25</span>% только по факту получения вами денег</p>
 		</div>
 		<div class="congrats-form">
+			
 			<div class="cform-block-item name-item">
 				<div class="cform-block-item-icon"><img src="/img/colors/blue/user.svg" alt="Укажите имя и фамилию пассажира (латиницей - так, как указано в билете)" title="Укажите имя и фамилию пассажира (латиницей - так, как указано в билете)"></div>
-				<input type="text" name="name" class="cform-block-item-input cform-name" placeholder="Имя и фамилия, как в билете" required-language="latin">
+				<input type="text" name="name" id="full-name" class="cform-block-item-input cform-name" placeholder="Имя и фамилия, как в билете" required-language="latin">
 				<p class="howitworks-user-note congrats-note name-note display-none">Пожалуйста, укажите имя только одного пассажира в формате Имя Фамилия без знаков препинания и дополнительных слов. Вы сможете указать попутчиков на следующих страницах и позже</p>
 			</div>
 			<div class="cform-block-item" id="email1-block" >
 				<div class="cform-block-item-icon"><p class="cform-block-item-icon-img">@</p></div>
-				<input type="email" name="email" class="cform-block-item-input cform-email1" placeholder="E-mail">
+				<input type="email" id="email-address" name="_replyto" class="cform-block-item-input cform-email1" placeholder="E-mail">
+				<input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
 			</div>
 			<div class="cform-block">
 				<div class="info clearfix">
@@ -389,7 +392,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</div>
 				<div class="cform-block-item phone-block-item">
 					<div class="cform-block-item-icon"><img src="/img/colors/blue/phone.svg" alt="Укажите контактный телефон" title="Укажите контактный телефон"></div>
-					<input type="text" name="phone" class="cform-block-item-input cform-other-phonenumber cform-phoneNumber" placeholder="Тел. (напр. +3899997755)">
+					<input type="text" name="message" id="message" class="cform-block-item-input cform-other-phonenumber cform-phoneNumber" placeholder="Тел. (напр. +3899997755)">
 				</div>
 			</div>
 			<div class="cform-block info clearfix policyagree-container">
@@ -405,7 +408,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<a href="#4" class="action-button submit-claim-button action-next has-spinnery" id="second-button">
 				<span class="button-text">Подать заявку  </span><span class="spinnery"><img src="/img/colors/white/loading.svg" alt="" width="25px" height="25px"></span>
 			</a>
+			<input type="submit" value="Submit">Подать заявку</input>
 		</div>
+			</form>
 	</section>
 
 	</section>
