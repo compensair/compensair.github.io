@@ -667,7 +667,7 @@ $(document).ready(function () {
     $('.cform-arrival').val('');
     $('.cform-mdeparture').val('');
     $('.cform-marrival').val('');
-    $('.cform-airline').val('Air France (AF)');
+    $('.cform-airline').val('');
     $('.cform-country').val('');
     $('.cform-date').val(new Date().toISOString().slice(0, 10))
 
